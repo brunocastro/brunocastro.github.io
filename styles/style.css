@@ -1,20 +1,45 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #efefef;
+}
+
 .cover {
     margin-top: 0px;
     width: 100%;
     height: 100vh;
-    background-color: #999;
-    text-align: center;
+    background-color: #212121;
+    background-image: url("../images/background.png");
+    background-size: 50%;
+    text-align: left;
     overflow: hidden;
     color: #fff;
 }
-.cover h1, h2 {
-    font-weight: 300;
-}
 .cover .container {
-    width: 80%;
+    width: 70%;
     max-width: 960px;
     margin: auto;
     margin-top: 30vh;
+}
+.cover h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.8em;
+    font-weight: 200;
+    margin-bottom: 1em;
+}
+.cover a {
+    width: 50%;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.9em;
+    font-weight: 200;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 24px;
+    border: solid 2px #fff;
+    padding: 8px 32px;
+}
+.cover h1 small {
+    font-size: 0.5em;
 }
 /*Galeria*/
 .flex-container {
@@ -31,7 +56,10 @@
     justify-content: center;
 }   
 .flex-item-galery {
-    background: #efefef;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background: #ffffff;
     margin: 4px 16px;
     width: calc(100% - 48px);
     max-width: 360px;
@@ -40,12 +68,21 @@
     padding: 12px 24px;
 }
 @media only screen and (min-width: 480px) {
+    .cover a {
+        font-size: 1.1em;
+    }
+    .cover h1 {
+        font-size: 2.2em;
+    }
     .flex-item-galery {
         width: calc(45% - 48px);
         margin: 4px;
     }
 }
 @media only screen and (min-width: 960px) {
+    .cover h1 {
+        font-size: 3em;
+    }
     .flex-item-galery {
         margin: 4px;
         width: calc(30% - 48px);
@@ -71,15 +108,24 @@
 .flex-item-galery img:hover {
     opacity: 0.8;
 }
+.flex-item-galery h3 {
+    margin: 0;
+    margin-top: 12px;
+}
+.flex-item-galery p {
+    margin: 2px 0 8px 0;
+}
 .flex-item-galery a {
-    color: #333;
     text-decoration: none;
+    color: #333;
 }
 /*Footer*/
 footer {
     text-align: center;
     color: #999;
-    background-color: #fff;
-    border-top: solid 2px #efefef;
+    background-color: #efefef;
+    border-top: solid 2px #ddd;
     margin-top: 24px;
+    margin-bottom: 0px;
+    overflow: hidden;
 }
