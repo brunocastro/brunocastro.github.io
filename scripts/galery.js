@@ -1,5 +1,5 @@
 var apikey ='0FXtgoJQ643HvHFAV5wjCgqoivhKgCHs';
-var userid ='DarrinCrescenzi';
+var userid ='mr_brunocastro';
 var containergalery = 'galery';
 
     be(apikey)
@@ -16,7 +16,7 @@ function beloop (container, api) {
     for (i = 0; i < api.projects.length; i++) {
         html += '<div class="flex-item-galery">'+ 
         '<a href="'+api.projects[i].url+'" target="_blank">'+
-        '<img src="'+api.projects[i].covers["404"]+'">'+
+        '<img src="'+api.projects[i].covers["original"]+'">'+
         '<h3>'+api.projects[i].name+'</h3>'+
         '<p><small>Categorias: '+api.projects[i].fields.join(', ')+'</small></p>'+
         // '<p><span> a '+api.projects[i].stats.appreciations+'</span>'+
