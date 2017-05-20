@@ -15,7 +15,7 @@ function beloop (container, api) {
     var html="";
     for (i = 0; i < api.projects.length; i++) {
         html += '<div class="flex-item-galery">'+ 
-        '<a href="'+api.projects[i].url+'" target="_blank">'+
+        '<a href="'+api.projects[i].url+'" target="_self">'+
         '<img src="'+api.projects[i].covers["original"]+'">'+
         '<h3>'+api.projects[i].name+'</h3>'+
         '<p><small>Categorias: '+api.projects[i].fields.join(', ')+'</small></p>'+

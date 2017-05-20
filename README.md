@@ -1,2 +1,3 @@
 # brunocastro.github.io
-A personal portfolio
+The personal portfolio of Bruno Castro.
+work in progress

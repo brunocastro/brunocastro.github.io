@@ -27,13 +27,32 @@ body {
     margin-bottom: 1em;
 }
 .cover a {
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 4px solid #fff;
+    font-weight: 400;
+    cursor: pointer;
+}
+.cover a:hover {
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+.cover .btn {
     width: 50%;
+    font-weight: 400;
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 0.9em;
-    font-weight: 200;
     color: #fff;
     text-decoration: none;
+    border-radius: 24px;
+    border: solid 2px #fff;
+    padding: 8px 32px;
+}
+.cover .btn:hover {
+    font-weight: 400;
+    color: #333;
+    background-color: #fff;
     border-radius: 24px;
     border: solid 2px #fff;
     padding: 8px 32px;
@@ -45,7 +64,6 @@ body {
 .flex-container {
     padding: 0;
     margin: 0;
-    margin-top: -20vh;
     list-style: none;
     display: -webkit-box;
     display: -moz-box;
@@ -67,11 +85,27 @@ body {
     overflow: hidden;
     padding: 12px 24px;
 }
+.galery {
+    margin-top: -15vh;
+}
+
+.simple-container{
+    margin: 10vh 48px;
+    text-align: center;
+    color: #333;
+}
+.simple-container ul {
+list-style-type: none;
+}
+
+.simple-container h2 {
+
+}
 @media only screen and (min-width: 480px) {
     .cover .container {
         margin-top: 20vh;
     }
-    .cover a {
+    .cover .btn {
         font-size: 1.1em;
     }
     .cover h1 {
